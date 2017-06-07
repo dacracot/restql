@@ -2,11 +2,11 @@
 <!-- ========================================================== -->
 <Context>
 <!-- ========================================================== -->
-	<Resource name="jdbc/storql"
+	<Resource name="jdbc/restql"
 		auth="Container"
 		type="javax.sql.DataSource"
 		driverClassName="org.sqlite.JDBC"
-		url="jdbc:sqlite:${catalina.home}/webapps/storql/WEB-INF/classes/storql.db"
+		url="jdbc:sqlite:${catalina.home}/webapps/restql/WEB-INF/classes/restql.db"
 		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory">
 	</Resource>
 <!-- ========================================================== -->

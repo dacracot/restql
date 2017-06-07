@@ -6,7 +6,7 @@ $(document).ready(function()
 	console.log("test GET");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'GET',
 		data:
 			{
@@ -26,7 +26,7 @@ $(document).ready(function()
 	console.log("test POST");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'POST',
 		data:
 			{
@@ -46,7 +46,7 @@ $(document).ready(function()
 	console.log("test PUT");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'PUT',
 		data:
 			{
@@ -66,7 +66,7 @@ $(document).ready(function()
 	console.log("test DELETE");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'DELETE',
 		data:
 			{
@@ -86,7 +86,7 @@ $(document).ready(function()
 	console.log("test GET");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'GET',
 		data:
 			{
@@ -106,7 +106,7 @@ $(document).ready(function()
 	console.log("test OPTIONS");
 	$.ajax(
 		{
-		url: '/storql/db',
+		url: '/restql/db',
 		type: 'OPTIONS',
 		data:
 			{

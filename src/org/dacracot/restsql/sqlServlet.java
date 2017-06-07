@@ -1,11 +1,11 @@
-package org.dacracot.storql;
+package org.dacracot.restql;
 //---------------------------------------------------
 import java.io.*;
 import java.net.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 //---------------------------------------------------
-import org.dacracot.storql.util.*;
+import org.dacracot.restql.util.*;
 //----------------------------------------------------
 public class sqlServlet extends HttpServlet
 	{
@@ -19,7 +19,7 @@ public class sqlServlet extends HttpServlet
 		try
 			{
 			debug.init(config);
-			debug.logger("org.dacracot.storql.sqlServlet","initialized storql SQL version: "+sqlServlet.class.getPackage().getImplementationVersion()+" with "+config.getInitParameter("debugLevel")+" logging");
+			debug.logger("org.dacracot.restql.sqlServlet","initialized restql SQL version: "+sqlServlet.class.getPackage().getImplementationVersion()+" with "+config.getInitParameter("debugLevel")+" logging");
 			pp = new paramParser();
 			}
 		catch (Exception e)
@@ -37,7 +37,7 @@ public class sqlServlet extends HttpServlet
 			res.setContentType("text/plain");
 			PrintWriter out = res.getWriter();
 			//-------------------------------------------
-			out.println(bb.storql());
+			out.println(bb.restql());
 			out.close();
 			}
 		catch(requestException re)

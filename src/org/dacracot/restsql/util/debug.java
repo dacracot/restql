@@ -1,4 +1,4 @@
-package org.dacracot.storql.util;
+package org.dacracot.restql.util;
 //---------------------------------------------------
 import java.io.*;
 import java.text.*;

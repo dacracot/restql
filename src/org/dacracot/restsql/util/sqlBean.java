@@ -1,4 +1,4 @@
-package org.dacracot.storql.util;
+package org.dacracot.restql.util;
 //---------------------------------------------------
 import java.io.*;
 import java.util.*;
@@ -26,7 +26,7 @@ public class sqlBean
 			}
 		catch (Exception e)
 			{
-			debug.logger("org.dacracot.storql.util.sqlBean","error: constructor >> ",e);
+			debug.logger("org.dacracot.restql.util.sqlBean","error: constructor >> ",e);
 			}
 		}
 	//-----------------------------------------------
@@ -38,7 +38,7 @@ public class sqlBean
 		DELETE
 		}
 	//-----------------------------------------------
-	public String storql()
+	public String restql()
 		{
 		String result = "";
 		try
@@ -71,7 +71,7 @@ public class sqlBean
 			}
 		catch (Exception e)
 			{
-			result = debug.logger("org.dacracot.storql.util.sqlBean","error: storql >> ",e);
+			result = debug.logger("org.dacracot.restql.util.sqlBean","error: restql >> ",e);
 			}
 		return(result);
 		}
